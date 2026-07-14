@@ -42,7 +42,6 @@
 
   /* Hero */
   .hero{padding:88px 0 56px;border-bottom:1px solid var(--line);}
-  .hero .kicker{font-size:15px;font-weight:700;color:var(--accent);letter-spacing:.02em;margin-bottom:14px;}
   .hero h1{font-size:clamp(32px,5vw,50px);line-height:1.26;font-weight:800;margin:0 0 18px;color:var(--navy);max-width:22ch;}
   .hero p.lead{font-size:20px;color:var(--sub);max-width:var(--measure);margin:0 0 24px;}
   .hero .meta{display:flex;flex-wrap:wrap;gap:8px;font-size:14.5px;color:var(--sub);}
@@ -51,7 +50,6 @@
   section{padding:64px 0;}
   section.divider{border-top:1px solid var(--line);}
   .section-head{margin-bottom:32px;max-width:var(--measure);}
-  .section-head .kicker{font-size:14px;font-weight:700;color:var(--accent);margin-bottom:6px;}
   .section-head h2{font-size:32px;font-weight:800;color:var(--navy);margin:0 0 10px;line-height:1.3;}
   .section-head p{font-size:17px;color:var(--sub);margin:0;}
 
@@ -74,8 +72,8 @@
   /* Idea cards 2+4 hierarchy */
   .ideas-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
   .idea-card{border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:var(--bg);}
-  .idea-card .idea-no{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.04em;margin-bottom:8px;}
   .idea-card h3{font-size:21px;font-weight:800;color:var(--navy);margin:0 0 10px;line-height:1.35;}
+  .idea-card h3 .no{color:var(--accent);}
   .idea-card p{font-size:16.5px;color:var(--sub);margin:0 0 12px;}
   .idea-card .basis{font-size:15.5px;color:var(--ink);border-top:1px solid var(--line);padding-top:12px;margin-top:auto;}
   .idea-card .basis b{color:var(--navy);}
@@ -113,7 +111,6 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="kicker">지정작업팀 리서치 노트 · 아이디어 선정용</div>
     <h1>MaimHaim × GroundK,<br>어디서 만날 수 있을까</h1>
     <p class="lead">태그리스 결제 스타트업 마임하임과 그라운드케이의 협업 지점 정리.</p>
     <div class="meta">
@@ -127,7 +124,6 @@
 <section class="divider">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker">두 회사</div>
       <h2>기술 스타트업 × 현장 운영사</h2>
     </div>
 
@@ -171,22 +167,19 @@
 <section class="divider">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker">협업 아이디어</div>
       <h2>구체적으로 어디부터 붙일 수 있나</h2>
       <p>핵심 후보 2개 + 검토 가치가 있는 5개.</p>
     </div>
 
     <div class="ideas-grid">
       <div class="idea-card wide">
-        <div class="idea-no">01 — 셔틀 실증</div>
-        <h3>RIDEUS 셔틀 노선에 태그리스 승하차 파일럿 적용</h3>
+        <h3><span class="no">01</span> RIDEUS 셔틀 노선에 태그리스 승하차 파일럿 적용</h3>
         <p>셔틀 노선 1곳에 QR 검표 대신 마임하임 태그리스 체크인 시범 적용. 이용자는 태깅 없이 탑승 완료.</p>
         <p class="basis"><b>근거:</b> 그라운드케이 실운행 노선 = 마임하임이 원하는 PoC 환경 그 자체.</p>
       </div>
 
       <div class="idea-card wide">
-        <div class="idea-no">02 — 동남아 공동 진출</div>
-        <h3>동남아 거점으로 마임하임의 해외 확장 동행</h3>
+        <h3><span class="no">02</span> 동남아 거점으로 마임하임의 해외 확장 동행</h3>
         <p>마임하임의 태국·싱가포르 진출 계획 위에 그라운드케이의 기존 현지 거점·수송망을 그대로 얹는다.</p>
         <p class="basis"><b>근거:</b> 해외 진출 최대 비용(현지 네트워크)을 그라운드케이가 이미 보유.</p>
       </div>
@@ -194,32 +187,27 @@
 
     <div class="compact-grid">
       <div class="idea-card compact">
-        <div class="idea-no">03</div>
-        <h3>T-RiseUp TMS 결제 옵션으로 통합</h3>
+        <h3><span class="no">03</span> T-RiseUp TMS 결제 옵션으로 통합</h3>
         <p>T-RiseUp QR 검표에 마임하임 태그리스 결제를 옵션으로 추가, 고객사가 선택.</p>
         <p class="basis">근거: 기존 시스템 유지 + 옵션 추가라 도입 장벽 낮음.</p>
       </div>
       <div class="idea-card compact">
-        <div class="idea-no">04</div>
-        <h3>지자체 공공셔틀 공동 제안</h3>
+        <h3><span class="no">04</span> 지자체 공공셔틀 공동 제안</h3>
         <p>지자체 공공셔틀 제안에 태그리스 옵션 추가. 단, 서울(티머니 선점)보다 비수도권부터.</p>
         <p class="basis">근거: 공공 발주는 차별화 기술이 곧 경쟁력.</p>
       </div>
       <div class="idea-card compact">
-        <div class="idea-no">05</div>
-        <h3>공항 VIP 픽업 자동 체크인</h3>
+        <h3><span class="no">05</span> 공항 VIP 픽업 자동 체크인</h3>
         <p>공항 픽업·센드오프 동선에 자동 체크인 적용, 수동 확인 자동화.</p>
         <p class="basis">근거: 양사 로드맵이 "공항"에서 정확히 겹침.</p>
       </div>
       <div class="idea-card compact">
-        <div class="idea-no">06</div>
-        <h3>초대형 행사 참가자 동선 추적</h3>
+        <h3><span class="no">06</span> 초대형 행사 참가자 동선 추적</h3>
         <p>대형 국제행사 수송에서 참가자 체크인·탑승 동선 자동화 시범.</p>
         <p class="basis">근거: 양사 모두에게 레퍼런스가 되는 구조.</p>
       </div>
       <div class="idea-card compact">
-        <div class="idea-no">07</div>
-        <h3>실시간 혼잡도 기반 배차·이용 안내 (산단버스 파일럿)</h3>
+        <h3><span class="no">07</span> 실시간 혼잡도 기반 배차·이용 안내 (산단버스 파일럿)</h3>
         <p>차량 내 혼잡 구역까지 파악해 이용자에겐 혼잡도 안내, 운영자에겐 증차 판단 근거 제공. 산단버스(교대조 출퇴근) 노선이 유력 후보.</p>
         <p class="basis">근거: 실운영 노선이라 현장 데이터로 즉시 검증 가능.</p>
       </div>
@@ -230,7 +218,6 @@
 <section class="divider">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker">균형있게 보기</div>
       <h2>같이 확인해야 할 지점</h2>
       <p>접점이 많다 ≠ 지금 바로 계약 가능.</p>
     </div>
@@ -258,7 +245,6 @@
 <section class="divider">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker">다음 단계</div>
       <h2>제안하는 순서</h2>
     </div>
     <div class="steps">
@@ -289,9 +275,7 @@
 
 <footer>
   <div class="wrap">
-    <div class="section-head" style="margin-bottom:0;">
-      <div class="kicker">출처</div>
-    </div>
+    <p style="font-weight:700;color:var(--navy);font-size:16px;margin:0;">출처</p>
     <ul class="src-list">
       <li><a href="https://maimhaim.co.kr/" target="_blank" rel="noopener">maimhaim.co.kr — 마임하임 공식 홈페이지</a></li>
       <li><a href="https://www.etnews.com/20260415000117" target="_blank" rel="noopener">전자신문 — [2025 K-스타트업 그랜드 챌린지 스타] 〈5〉마임하임 "모바일 비접촉 기술로 편리한 디지털 세상 만들 것"</a></li>
